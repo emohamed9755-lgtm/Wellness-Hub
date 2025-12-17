@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Wellness Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <h1>Wellness Hub</h1>
+        <button id="toggleTheme">Toggle Theme</button>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard">
+
+        <!-- Steps Section -->
+        <section class="card" id="stepsCard">
+            <h2>Steps Today</h2>
+            <input type="number" id="stepsInput" placeholder="Enter steps">
+            <button id="addSteps">Add Steps</button>
+            <p>Total Steps: <span id="stepsDisplay">0</span></p>
+        </section>
+
+        <!-- Water Intake Section -->
+        <section class="card" id="waterCard">
+            <h2>Water Intake</h2>
+            <input type="number" id="waterInput" placeholder="Glasses of water">
+            <button id="addWater">Add Water</button>
+            <p>Glasses Today: <span id="waterDisplay">0</span></p>
+        </section>
+
+        <!-- Sleep Tracker Section -->
+        <section class="card" id="sleepCard">
+            <h2>Sleep Tracker</h2>
+            <input type="number" id="sleepInput" placeholder="Hours slept">
+            <button id="addSleep">Add Sleep</button>
+            <p>Total Sleep: <span id="sleepDisplay">0</span> hours</p>
+        </section>
+
+        <!-- Mood Tracker Section -->
+        <section class="card" id="moodCard">
+            <h2>Mood Today</h2>
+            <select id="moodSelect">
+                <option value="">Select Mood</option>
+                <option value="😃 Happy">Happy</option>
+                <option value="😐 Neutral">Neutral</option>
+                <option value="😔 Sad">Sad</option>
+                <option value="💪 Energetic">Energetic</option>
+            </select>
+            <button id="setMood">Set Mood</button>
+            <p>Current Mood: <span id="moodDisplay">-</span></p>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <button id="resetBtn">Reset All Data</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

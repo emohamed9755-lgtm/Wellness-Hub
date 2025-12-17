@@ -1,0 +1,165 @@
+/* ===============================
+   Global Styles
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #FFEBEE;
+    color: #212121;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===============================
+   Header
+================================ */
+.header {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#toggleTheme {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E53935;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#toggleTheme:hover {
+    background-color: #B71C1C;
+}
+
+/* ===============================
+   Dashboard / Cards
+================================ */
+.dashboard {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: background 0.3s;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.card input,
+.card select,
+.card button {
+    padding: 8px 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #E0E0E0;
+    outline: none;
+    width: 100%;
+}
+
+.card button {
+    background-color: #E53935;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card button:hover {
+    background-color: #B71C1C;
+}
+
+.card p {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* ===============================
+   Footer
+================================ */
+.footer {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 15px;
+}
+
+#resetBtn {
+    padding: 10px 16px;
+    background-color: #E53935;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#resetBtn:hover {
+    background-color: #B71C1C;
+}
+
+/* ===============================
+   Dark Theme
+================================ */
+.dark-theme {
+    background: #2C0D0D;
+    color: #FFEBEE;
+}
+
+.dark-theme .card {
+    background-color: #4A0E0E;
+}
+
+.dark-theme input,
+.dark-theme select {
+    background-color: #2C0D0D;
+    color: #FFEBEE;
+    border: 1px solid #B71C1C;
+}
+
+.dark-theme button {
+    background-color: #B71C1C;
+}
+
+.dark-theme button:hover {
+    background-color: #E53935;
+}
+
+/* ===============================
+   Responsive
+================================ */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1rem;
+    }
+}
